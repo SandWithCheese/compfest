@@ -75,7 +75,11 @@ const Balance = () => {
                 }
             })
             window.location.reload()
-        }else{
+        }
+        else if (withdraw.current > 500_000) {
+            alert("Maksimal Penarikan Dana Rp500.000,00")
+        }
+        else{
             alert("Saldo Kurang")
         }
     }
